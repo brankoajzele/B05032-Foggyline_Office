@@ -1,7 +1,6 @@
 <?php
 
 namespace Foggyline\Office\Setup;
-
 use Magento\Eav\Setup\EavSetup;
 
 class EmployeeSetup extends EavSetup
@@ -9,7 +8,6 @@ class EmployeeSetup extends EavSetup
     public function getDefaultEntities()
     {
         $employeeEntity = \Foggyline\Office\Model\Employee::ENTITY;
-
         $entities = [
             $employeeEntity => [
                 'entity_model' => 'Foggyline\Office\Model\Resource\Employee',

@@ -21,48 +21,30 @@ class InstallData implements InstallDataInterface
     {
         $setup->startSetup();
 
+        $employeeEntity = \Foggyline\Office\Model\Employee::ENTITY;
+
         $employeeSetup = $this->employeeSetupFactory->create(['setup' => $setup]);
 
         $employeeSetup->installEntities();
 
         $employeeSetup->addAttribute(
-            \Foggyline\Office\Model\Employee::ENTITY,
-            'service_years',
-            [
-                'type' => 'int',
-            ]
+            $employeeEntity, 'service_years', ['type' => 'int']
         );
 
         $employeeSetup->addAttribute(
-            \Foggyline\Office\Model\Employee::ENTITY,
-            'dob',
-            [
-                'type' => 'datetime',
-            ]
+            $employeeEntity, 'dob', ['type' => 'datetime']
         );
 
         $employeeSetup->addAttribute(
-            \Foggyline\Office\Model\Employee::ENTITY,
-            'salary',
-            [
-                'type' => 'decimal',
-            ]
+            $employeeEntity, 'salary', ['type' => 'decimal']
         );
 
         $employeeSetup->addAttribute(
-            \Foggyline\Office\Model\Employee::ENTITY,
-            'vat_number',
-            [
-                'type' => 'varchar',
-            ]
+            $employeeEntity, 'vat_number', ['type' => 'varchar']
         );
 
         $employeeSetup->addAttribute(
-            \Foggyline\Office\Model\Employee::ENTITY,
-            'note',
-            [
-                'type' => 'text',
-            ]
+            $employeeEntity, 'note', ['type' => 'text']
         );
 
         $setup->endSetup();

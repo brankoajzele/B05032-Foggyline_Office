@@ -10,10 +10,10 @@ class UpgradeSchema implements UpgradeSchemaInterface
 {
     public function upgrade(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
+        $setup->startSetup();
+
         $employeeEntityTable = \Foggyline\Office\Model\Employee::ENTITY . '_entity';
         $departmentEntityTable = 'foggyline_office_department';
-
-        $setup->startSetup();
 
         $setup->getConnection()
             ->addForeignKey(

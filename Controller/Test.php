@@ -2,7 +2,6 @@
 
 namespace Foggyline\Office\Controller;
 
-class Test extends \Magento\Framework\App\Action\Action
+abstract class Test extends \Magento\Framework\App\Action\Action
 {
-
 }
