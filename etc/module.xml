@@ -5,7 +5,6 @@
     <module name="Foggyline_Office" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Eav"/>
-            <module name="Magento_Indexer"/>
         </sequence>
     </module>
 </config>
