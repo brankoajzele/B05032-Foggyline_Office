@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="foggyline_office" class="Foggyline\Office\Block\Widget\Example"
+            placeholder_image="Magento_Cms::images/widget_block.png">
+        <label translate="true">Foggyline Office</label>
+        <description translate="true">Example Widget</description>
+        <parameters>
+            <parameter name="var1" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Yes/No var1</label>
+            </parameter>
+            <parameter name="var2" xsi:type="text" required="true" visible="true">
+                <label translate="true">Number var2</label>
+                <depends>
+                    <parameter name="var1" value="1"/>
+                </depends>
+                <value>5</value>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

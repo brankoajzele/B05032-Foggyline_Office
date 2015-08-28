@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+
+This file is needed or else we would get
+
+[2015-07-28 07:48:17] main.CRITICAL: foggyline_office_employee_flat view does not exist. [] []
+
+this is because app/code/Foggyline/Office/etc/indexer.xml file specified the "indexer" that set the view_id attribute value to "foggyline_office_employee_flat",
+ thus wee needed to define a view with the same id attribute value.
+
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Mview/etc/mview.xsd">
+    <view id="foggyline_office_employee" class="Foggyline\Office\Model\Indexer\Employee" group="indexer">
+        <subscriptions>
+            <table name="foggyline_office_employee_entity" entity_column="entity_id" />
+            <table name="foggyline_office_employee_entity_int" entity_column="entity_id" />
+        </subscriptions>
+    </view>
+</config>

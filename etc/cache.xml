@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Cache/etc/cache.xsd">
+    <type name="foggyline_office"
+          instance="Foggyline\Office\Model\Cache">
+        <label>Foggyline Office Example</label>
+        <description>Example cache from Foggyline Office module.</description>
+    </type>
+</config>
