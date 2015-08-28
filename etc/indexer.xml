@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../../../Magento/Indexer/etc/indexer.xsd">
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Indexer/etc/indexer.xsd">
     <indexer id="foggyline_office_employee" view_id="foggyline_office_employee"
              class="Foggyline\Office\Model\Indexer\Employee">
         <title translate="true">Employee Flat Data</title>
