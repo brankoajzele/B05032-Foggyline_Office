@@ -3,7 +3,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
-        <job name="foggyline_office_logHello" instance="Foggyline\Office\Model\Cron" method="logHello">
+        <job name="foggyline_office_log_hello" instance="Foggyline\Office\Cron\LogHello" method="execute">
             <schedule>*/2 * * * *</schedule>
         </job>
     </group>

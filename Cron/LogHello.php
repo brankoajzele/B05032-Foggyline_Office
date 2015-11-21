@@ -1,8 +1,8 @@
 <?php
 
-namespace Foggyline\Office\Model;
+namespace Foggyline\Office\Cron;
 
-class Cron
+class LogHello
 {
     protected $logger;
 
@@ -13,7 +13,7 @@ class Cron
         $this->logger = $logger;
     }
 
-    public function logHello()
+    public function execute()
     {
         $this->logger->info('Hello from Cron job!');
         return $this;
