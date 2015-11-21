@@ -41,13 +41,21 @@ class Crud extends \Foggyline\Office\Controller\Test
     }
 
     /**
-     * URL like http://shop.loc/index.php/foggyline_office/test/crud/
-     * http://magento2.loc/index.php/foggyline_office/test/crud/
+     * Url like http://magento2.ce/index.php/foggyline_office/test/crud/
      */
     public function execute()
     {
-        //test code here
+        $resultPage = $this->resultPageFactory->create();
 
-        exit('Foggyline\Office\Controller\Test\Crud');
+        $this->messageManager->addSuccess('Success-1');
+        $this->messageManager->addSuccess('Success-2');
+        $this->messageManager->addNotice('Notice-1');
+        $this->messageManager->addNotice('Notice-2');
+        $this->messageManager->addWarning('Warning-1');
+        $this->messageManager->addWarning('Warning-2');
+        $this->messageManager->addError('Error-1');
+        $this->messageManager->addError('Error-2');
+
+        return $resultPage;
     }
 }
