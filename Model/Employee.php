@@ -15,6 +15,6 @@ class Employee
      */
     public function _construct()
     {
-        $this->_init('Foggyline\Office\Model\Resource\Employee');
+        $this->_init('Foggyline\Office\Model\ResourceModel\Employee');
     }
 }

@@ -12,7 +12,7 @@ this is because app/code/Foggyline/Office/etc/indexer.xml file specified the "in
 
 -->
 
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Mview/etc/mview.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
     <view id="foggyline_office_employee" class="Foggyline\Office\Model\Indexer\Employee" group="indexer">
         <subscriptions>
             <table name="foggyline_office_employee_entity" entity_column="entity_id" />

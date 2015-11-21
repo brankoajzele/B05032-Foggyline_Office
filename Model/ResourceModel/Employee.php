@@ -1,6 +1,6 @@
 <?php
 
-namespace Foggyline\Office\Model\Resource;
+namespace Foggyline\Office\Model\ResourceModel;
 
 class Employee
     //extends \Magento\Eav\Model\Entity\VersionControl\AbstractEntity

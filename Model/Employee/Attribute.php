@@ -16,6 +16,6 @@ class Attribute extends \Magento\Eav\Model\Entity\Attribute
      */
     protected function _construct()
     {
-        $this->_init('Foggyline\Office\Model\Resource\Employee\Attribute');
+        $this->_init('Foggyline\Office\Model\ResourceModel\Employee\Attribute');
     }
 }

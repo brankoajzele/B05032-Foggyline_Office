@@ -10,7 +10,7 @@ class EmployeeSetup extends EavSetup
         $employeeEntity = \Foggyline\Office\Model\Employee::ENTITY;
         $entities = [
             $employeeEntity => [
-                'entity_model' => 'Foggyline\Office\Model\Resource\Employee',
+                'entity_model' => 'Foggyline\Office\Model\ResourceModel\Employee',
                 'table' => $employeeEntity . '_entity',
                 'attributes' => [
                     'department_id' => [
