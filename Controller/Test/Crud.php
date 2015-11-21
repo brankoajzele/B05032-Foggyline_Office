@@ -48,7 +48,6 @@ class Crud extends \Foggyline\Office\Controller\Test
     {
         //test code here
 
-        $resultPage = $this->resultPageFactory->create();
-        return $resultPage;
+        exit('Foggyline\Office\Controller\Test\Crud');
     }
 }
