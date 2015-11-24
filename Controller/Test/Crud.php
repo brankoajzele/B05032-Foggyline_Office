@@ -47,14 +47,43 @@ class Crud extends \Foggyline\Office\Controller\Test
     {
         $resultPage = $this->resultPageFactory->create();
 
-        $this->messageManager->addSuccess('Success-1');
-        $this->messageManager->addSuccess('Success-2');
-        $this->messageManager->addNotice('Notice-1');
-        $this->messageManager->addNotice('Notice-2');
-        $this->messageManager->addWarning('Warning-1');
-        $this->messageManager->addWarning('Warning-2');
-        $this->messageManager->addError('Error-1');
-        $this->messageManager->addError('Error-2');
+
+//
+//        $model = $this->_objectManager->create('Magento\Customer\Model\Address');
+//        $model->load(21);
+//        $model->setCity('Update London');
+//        $model->save();
+//
+//
+//
+//
+//
+//
+//        exit('7');
+
+
+
+//        $cookieValue = 'Just some value';
+//        $cookieMetadata = $this->cookieMetadataFactory
+//            ->createPublicCookieMetadata()
+//            ->setDuration(3600)
+//            ->setPath($this->sessionConfig->getCookiePath())
+//            ->setDomain($this->sessionConfig->getCookieDomain())
+//            ->setSecure($this->sessionConfig->getCookieSecure())
+//            ->setHttpOnly($this->sessionConfig->getCookieHttpOnly());
+//
+//        $this->cookieManager
+//            ->setPublicCookie('cookie_name_1', $cookieValue, $cookieMetadata);
+
+
+//        $this->messageManager->addSuccess('Success-1');
+//        $this->messageManager->addSuccess('Success-2');
+//        $this->messageManager->addNotice('Notice-1');
+//        $this->messageManager->addNotice('Notice-2');
+//        $this->messageManager->addWarning('Warning-1');
+//        $this->messageManager->addWarning('Warning-2');
+//        $this->messageManager->addError('Error-1');
+//        $this->messageManager->addError('Error-2');
 
         return $resultPage;
     }

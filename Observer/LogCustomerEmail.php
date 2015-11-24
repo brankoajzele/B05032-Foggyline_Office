@@ -24,8 +24,8 @@ class LogCustomerEmail implements ObserverInterface
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
         //$password = $observer->getEvent()->getPassword();
-        $customer = $observer->getEvent()->getModel();
-        $this->logger->info('Foggyline\Office: ' . $customer->getEmail());
+        //$customer = $observer->getEvent()->getModel();
+        //$this->logger->info('Foggyline\Office: ' . $customer->getEmail());
         return $this;
     }
 }
