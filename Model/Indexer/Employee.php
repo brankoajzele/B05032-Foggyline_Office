@@ -2,7 +2,7 @@
 
 namespace Foggyline\Office\Model\Indexer;
 
-class Employee implements \Magento\Indexer\Model\ActionInterface, \Magento\Framework\Mview\ActionInterface
+class Employee implements \Magento\Framework\Indexer\ActionInterface, \Magento\Framework\Mview\ActionInterface
 {
 
 
